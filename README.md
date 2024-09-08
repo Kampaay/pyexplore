@@ -37,6 +37,8 @@ conda config --set env_prompt '({name})' # shorten conda prompt prefix: https://
 
 jupyter notebook # start jupyter notebook server
 
+pip list --format=freeze > requirements.txt
+
 pip install -r requirements.txt
 
  ```
