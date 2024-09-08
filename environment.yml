@@ -161,4 +161,3 @@ dependencies:
 variables:
   VAR1: valueA
   VAR2: valueB
-prefix: /media/loris/DATA/proj/pyexplore/env

@@ -1,11 +1,15 @@
 ## Requirements
 
 - conda (miniconda): https://docs.anaconda.com/miniconda/
- 
+
+## Setup
+
+```bash
+
+```
+
 
  ## Cheat Sheet
-
- - vscode Select Interpreter: https://code.visualstudio.com/docs/python/environments#_working-with-python-interpreters
 
  ```bash
 
@@ -27,9 +31,22 @@ conda env update --file environment.yml --prune -p ./env
 
 # export the environment
 conda env export > environment.yml
+conda env export | grep -v "^prefix: " > environment.yml # https://stackoverflow.com/a/41274348
 
 conda config --set env_prompt '({name})' # shorten conda prompt prefix: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#specifying-a-location-for-an-environment
 
+jupyter notebook # start jupyter notebook server
+
+pip install -r requirements.txt
+
  ```
+
+
+REFS:
+
+- vscode Select Interpreter: https://code.visualstudio.com/docs/python/environments#_working-with-python-interpreters
+- https://albert-kuc.medium.com/set-project-environment-git-version-control-and-connect-to-github-from-terminal-prompt-cc51bb53bc1d
+- https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a
+
 
  ## known issues
